@@ -157,6 +157,7 @@
     </Compile>
     <Compile Include="Models\CommentFormContext.cs" />
     <Compile Include="Models\CommentForms.cs" />
+    <Compile Include="Models\CommentFormViewModel.cs" />
     <Compile Include="Models\Procedure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

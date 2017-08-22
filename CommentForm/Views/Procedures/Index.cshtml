@@ -12,11 +12,12 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Priority)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.Details)
         </th>
@@ -26,11 +27,12 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Priority)
         </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+       
         <td>
             @Html.DisplayFor(modelItem => item.Details)
         </td>

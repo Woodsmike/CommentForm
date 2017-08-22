@@ -1,4 +1,4 @@
-﻿@model CommentForm.Models.CommentForms
+﻿@model CommentForm.Models.CommentFormViewModel
 
 @{
     ViewBag.Title = "Details";
@@ -19,32 +19,38 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.CommentForms.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.CommentForms.Name)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Comment)
+            @Html.DisplayNameFor(model => model.CommentForms.Comment)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Comment)
+            @Html.DisplayFor(model => model.CommentForms.Comment)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Priority)
+            @Html.DisplayNameFor(model => model.CommentForms.Priority)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Priority)
+            @Html.DisplayFor(model => model.CommentForms.Priority)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Procedure.Details)
+        </dt>
 
+        <dd>
+            @Html.DisplayFor(model => model.Procedure.Details)
+        </dd>
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CommentID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CommentForms.CommentID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
